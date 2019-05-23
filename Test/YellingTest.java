@@ -14,5 +14,13 @@ class YellingTest {
 		String result = y.scream("Peter");
 		assertEquals("Peter is yelling", result);
 	}
+	
+	//R2 nobody is yelling
+	@Test
+	void testNobodyIsYelling() {
+		Yelling y = new Yelling();
+		String result = y.scream("NULL");
+		assertEquals("Nobody is yelling", result);
+	}
 
 }
